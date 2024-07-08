@@ -1,5 +1,11 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "src/*"  
+      ]
+    },
     "target": "es6",
     "module": "commonjs",
     "outDir": "dist",
@@ -12,7 +18,7 @@
     "skipLibCheck": true
   },
   "include": [
-    "./*.js",
     "src/**/*.ts"
-  ]
+  ],
+  "exclude": ["node_modules"]
 }
